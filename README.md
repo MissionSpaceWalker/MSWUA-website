@@ -2,8 +2,8 @@
 
 This is the official repository for the Mission SpaceWalker (MSWUA) website, a student-led space technology team at the University of Alberta.  
 
-Developed by: Angela, Kalista  
-Designed by: Angela, Kalista, Rosebud, Surabhi
+**Developed by:** Angela, Kalista, Aaliyah  
+**Designed by:** Angela, Kalista, Rosebud, Surabhi
 
 ## Project Structure
 
