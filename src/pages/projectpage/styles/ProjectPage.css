@@ -1,6 +1,6 @@
 #projects {
   width: 100vw;
-  min-height: 2210px;
+  min-height: 2670px;
   padding-top: 70px;
   background: linear-gradient(var(--project-glow)3%, var(--bg-color) 50%, var(--bg-color) 82%, var(--project-glow) 100%);
   position: relative;
@@ -10,7 +10,7 @@
   display: grid;
   margin-top: 140px;
   gap: 140px 20px;
-  grid-template: repeat(4, 1fr) / 1fr 1fr;
+  grid-template: repeat(5, 1fr) / 1fr 1fr;
   align-items: center;
 }
 
@@ -87,6 +87,10 @@
   height: 450px;
 }
 
+.line-5 {
+  height: 450px;
+}
+
 .line-section {
   display: flex;
   flex-direction: column;
@@ -100,7 +104,8 @@
 .checkpoint-1,
 .checkpoint-2,
 .checkpoint-3,
-.checkpoint-4 {
+.checkpoint-4,
+.checkpoint-5 {
   position: absolute;
   width: 70px;
   height: auto;
@@ -122,6 +127,10 @@
   top: 1630px;
 }
 
+.checkpoint-5 {
+  top: 2085px;
+}
+
 /* Medium-small devices */
 @media (max-width: 600px) {
 
@@ -136,7 +145,7 @@
   }
 
   .projects-grid {
-    grid-template: repeat(7, 1fr) / 1fr;
+    grid-template: repeat(10, 1fr) / 1fr;
   }
 
   .projects-1 {
@@ -167,6 +176,18 @@
     order: 7;
   }
 
+  .projects-img-4 {
+    order: 8;
+  }
+
+  .projects-5 {
+    order: 9;
+  }
+
+  .projects-img-5 {
+    order: 10;
+  }
+
   .line-section {
     left: 50px;
     margin-top: 100px;
@@ -188,6 +209,10 @@
     height: 100px;
   }
 
+  .line-5 {
+    height: 100px;
+  }
+
   .checkpoint-1 {
     top: 155px;
   }
@@ -202,6 +227,10 @@
 
   .checkpoint-4 {
     top: 2180px;
+  }
+
+  .checkpoint-5 {
+    top: 2855px;
   }
 
   .can-text {
@@ -241,6 +270,10 @@
     height: 20px;
   }
 
+  .line-5 {
+    height: 20px;
+  }
+
   .can-text {
     margin-left: calc(50% + 25%);
     width: 380px;
@@ -265,6 +298,10 @@
 
   .checkpoint-4 {
     top: 2045px;
+  }
+
+  .checkpoint-5 {
+    top: 2680px;
   }
 }
 
@@ -302,6 +339,10 @@
 
   .checkpoint-4 {
     top: 2033px;
+  }
+
+  .checkpoint-5 {
+    top: 2660px;
   }
 }
 

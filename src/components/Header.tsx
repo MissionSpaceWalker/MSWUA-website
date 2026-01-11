@@ -51,7 +51,7 @@ export function Header() {
               </NavLink>
             </motion.li>
             <motion.li variants={fadeDown}><NavLink 
-              to="/current-project/can-rgx-viii"
+              to="/current-project/can-sbx-viii"
               className={({ isActive  }) => isActive ? "active" : ""}
               >Current Project
               </NavLink>

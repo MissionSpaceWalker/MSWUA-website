@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import canRgxImage from "../../../assets/images/photos/projects/can-rgx.png";
 import canArxImage from "../../../assets/images/photos/projects/can-arx.png";
 import canSbxImage from "../../../assets/images/photos/projects/can-sbx.png";
+import canRgx2Image from "../../../assets/images/photos/projects/can-rgx2.png";
+import canSbx2Image from "../../../assets/images/photos/projects/can-sbx2.png";
 import FadeTextDiv from '../../../animations/fade-text-div.tsx';
 import { fade, fadeBlurUp, lineMovement } from "../../../animations/animations.tsx";
 import { Link } from 'react-router-dom';
@@ -45,11 +47,23 @@ export function ProjectPage () {
           </FadeTextDiv>
 
           <FadeTextDiv className="can-text projects-4">
-            <motion.h3 variants={fade}>2024-Present</motion.h3>
+            <motion.h3 variants={fade}>2024-2025</motion.h3>
             <motion.h2 variants={fade}className="project-title">CAN-RGX VIII</motion.h2>
-            <motion.p variants={fade} className="project-text">Current Project</motion.p>
+            <motion.p variants={fade} className="project-text">Our Recent Feat</motion.p>
             <Link to="/projects/can-rgx-viii"><motion.button variants={fade}>learn more</motion.button></Link>
           </FadeTextDiv>
+
+          <motion.img {...fadeBlurUp} className="projects-img-4" src={canRgx2Image} alt="can-rgx2 image" />
+
+          <motion.img {...fadeBlurUp} className="projects-img-5" src={canSbx2Image} alt="can-sbx2 image" />
+
+          <FadeTextDiv className="can-text projects-5">
+            <motion.h3 variants={fade}>2025-Present</motion.h3>
+            <motion.h2 variants={fade}className="project-title">CAN-SBX VIII</motion.h2>
+            <motion.p variants={fade} className="project-text">Work In Progress</motion.p>
+            <Link to="/projects/can-sbx-viii"><motion.button variants={fade}>learn more</motion.button></Link>
+          </FadeTextDiv>
+
         </div>
 
         <div className="line-section">
@@ -77,6 +91,13 @@ export function ProjectPage () {
           </motion.div>
 
           <img className="checkpoint-4" src={checkpoint} alt="check point icon" />
+
+          <motion.div {...lineMovement}  
+            transition={{ ...lineMovement.transition, delay: 1 }}
+            className="h-line line-5">
+          </motion.div>
+
+          <img className="checkpoint-5" src={checkpoint} alt="check point icon" />
         </div>
       </div>
     </>
